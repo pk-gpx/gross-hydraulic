@@ -1,0 +1,147 @@
+backend:
+  name: git-gateway
+  branch: main
+
+locale: "cs"
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "settings"
+    label: "Nastavení webu"
+    files:
+      - name: "site"
+        label: "SEO a kontaktní údaje"
+        file: "src/_data/site.json"
+        fields:
+          - { label: "Titulek stránky", name: "title", widget: "string" }
+          - { label: "Meta titulek", name: "metaTitle", widget: "string" }
+          - { label: "Meta popis", name: "metaDescription", widget: "text" }
+          - { label: "Meta klíčová slova", name: "metaKeywords", widget: "text" }
+          - { label: "Kanonická URL", name: "canonicalUrl", widget: "string" }
+          - { label: "OG obrázek", name: "ogImage", widget: "image" }
+          - { label: "Telefon (zobrazený)", name: "phone", widget: "string" }
+          - { label: "Telefon (odkaz)", name: "phoneLink", widget: "string", hint: "Formát: tel:+420XXXXXXXXX" }
+          - { label: "E-mail", name: "email", widget: "string" }
+          - { label: "Adresa (celá)", name: "address", widget: "string" }
+          - { label: "Ulice", name: "addressStreet", widget: "string" }
+          - { label: "Město", name: "addressCity", widget: "string" }
+          - { label: "PSČ", name: "addressPostalCode", widget: "string" }
+          - { label: "Kraj", name: "addressRegion", widget: "string" }
+          - { label: "Zeměpisná šířka", name: "geoLat", widget: "string" }
+          - { label: "Zeměpisná délka", name: "geoLon", widget: "string" }
+          - { label: "Google Maps embed URL", name: "mapsEmbed", widget: "string" }
+
+  - name: "sections"
+    label: "Sekce stránky"
+    files:
+      - name: "hero"
+        label: "Úvodní sekce (Hero)"
+        file: "src/_data/hero.json"
+        fields:
+          - { label: "Odznak (badge)", name: "badge", widget: "string", hint: "Text v odznaku, např. 'Nonstop servis 24/7'" }
+          - { label: "Nadpis - řádek 1", name: "headingLine1", widget: "string" }
+          - { label: "Nadpis - řádek 2 (zlatý)", name: "headingLine2", widget: "string" }
+          - { label: "Popis", name: "description", widget: "text" }
+          - { label: "Text tlačítka (telefon)", name: "ctaText", widget: "string" }
+          - { label: "Odkaz tlačítka", name: "ctaLink", widget: "string", hint: "Formát: tel:+420XXXXXXXXX" }
+          - { label: "Text druhého tlačítka", name: "secondaryCtaText", widget: "string" }
+          - { label: "Obrázek pozadí", name: "heroImage", widget: "image" }
+          - { label: "Alt text obrázku", name: "heroImageAlt", widget: "string" }
+
+      - name: "about"
+        label: "O nás"
+        file: "src/_data/about.json"
+        fields:
+          - { label: "Štítek sekce", name: "label", widget: "string" }
+          - { label: "Nadpis (HTML povoleno)", name: "heading", widget: "string", hint: "Pro zlatý text použijte: <span class=\"text-yellow\">text</span>" }
+          - { label: "Popis", name: "description", widget: "text" }
+          - { label: "Obrázek", name: "image", widget: "image" }
+          - { label: "Alt text obrázku", name: "imageAlt", widget: "string" }
+          - label: "Vlastnosti (karty)"
+            name: "features"
+            widget: "list"
+            max: 4
+            fields:
+              - label: "Ikona"
+                name: "icon"
+                widget: "select"
+                options:
+                  - { label: "Hvězda", value: "star" }
+                  - { label: "Hodiny", value: "clock" }
+                  - { label: "Dokument", value: "document" }
+                  - { label: "Štít", value: "shield" }
+              - { label: "Název", name: "title", widget: "string" }
+              - { label: "Popis", name: "description", widget: "text" }
+
+      - name: "systems"
+        label: "Hydraulické systémy"
+        file: "src/_data/systems.json"
+        fields:
+          - { label: "Štítek sekce", name: "label", widget: "string" }
+          - { label: "Nadpis (HTML povoleno)", name: "heading", widget: "string", hint: "Pro zlatý text použijte: <span class=\"text-yellow\">text</span>" }
+          - { label: "Popis", name: "description", widget: "text" }
+          - { label: "Obrázek", name: "image", widget: "image" }
+          - { label: "Alt text obrázku", name: "imageAlt", widget: "string" }
+          - label: "Služby"
+            name: "services"
+            widget: "list"
+            fields:
+              - { label: "Název", name: "title", widget: "string", hint: "Včetně dvojtečky na konci, např. 'Sklápění návěsů:'" }
+              - { label: "Popis", name: "description", widget: "text" }
+
+      - name: "hoses"
+        label: "Hydraulické hadice"
+        file: "src/_data/hoses.json"
+        fields:
+          - { label: "Štítek sekce", name: "label", widget: "string" }
+          - { label: "Nadpis (HTML povoleno)", name: "heading", widget: "string", hint: "Pro zlatý text použijte: <span class=\"text-yellow\">text</span>" }
+          - { label: "Popis", name: "description", widget: "text" }
+          - { label: "Obrázek", name: "image", widget: "image" }
+          - { label: "Alt text obrázku", name: "imageAlt", widget: "string" }
+          - label: "Služby"
+            name: "services"
+            widget: "list"
+            fields:
+              - { label: "Název", name: "title", widget: "string", hint: "Včetně dvojtečky na konci" }
+              - { label: "Popis", name: "description", widget: "text" }
+          - { label: "Poznámka (doplňkové služby)", name: "note", widget: "text" }
+
+      - name: "cta"
+        label: "Výzva k akci (CTA)"
+        file: "src/_data/cta.json"
+        fields:
+          - { label: "Nadpis (HTML povoleno)", name: "heading", widget: "string", hint: "Pro černý text: <span class=\"text-dark\">text</span>. Pro zalomení řádku: <br>." }
+          - { label: "Popis", name: "description", widget: "text" }
+
+      - name: "gallery"
+        label: "Galerie"
+        file: "src/_data/gallery.json"
+        fields:
+          - { label: "Štítek sekce", name: "label", widget: "string" }
+          - { label: "Nadpis (HTML povoleno)", name: "heading", widget: "string" }
+          - { label: "Popis", name: "description", widget: "text" }
+          - label: "Fotografie"
+            name: "images"
+            widget: "list"
+            summary: "{{fields.alt}}"
+            fields:
+              - { label: "Fotografie", name: "image", widget: "image" }
+              - { label: "Popis fotografie (alt text)", name: "alt", widget: "string" }
+
+      - name: "contact"
+        label: "Kontakt (texty)"
+        file: "src/_data/contact.json"
+        fields:
+          - { label: "Štítek sekce", name: "label", widget: "string" }
+          - { label: "Nadpis (HTML povoleno)", name: "heading", widget: "string" }
+          - { label: "Popis", name: "description", widget: "text" }
+
+      - name: "footer"
+        label: "Patička"
+        file: "src/_data/footer.json"
+        fields:
+          - { label: "Slogan", name: "tagline", widget: "string" }
+          - { label: "Copyright text", name: "copyright", widget: "string", hint: "Např. '2025 Gross Hydraulic. Všechna práva vyhrazena.'" }
+          - { label: "Kredit", name: "credit", widget: "string" }

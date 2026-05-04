@@ -1,0 +1,17 @@
+{
+  "label": "Naše služby",
+  "heading": "Montáž hydraulických<br><span class=\"text-yellow\">systémů</span>",
+  "description": "Používáme výhradně kvalitní komponenty značky HYVA, které jsou známé svou spolehlivostí, odolností a dlouhou životností. Díky našim dlouholetým zkušenostem v oboru nabízíme řešení přesně přizpůsobené specifickým požadavkům našich zákazníků.",
+  "image": "/images/systems.jpeg",
+  "imageAlt": "Hydraulický systém HYVA",
+  "services": [
+    {
+      "title": "Sklápění návěsů:",
+      "description": "Zajišťujeme montáž systému, který umožňuje bezpečné a efektivní sklápění nákladů."
+    },
+    {
+      "title": "Návěsy s posuvnou podlahou:",
+      "description": "Tyto systémy výrazně zlepšují manipulaci s materiálem při vykládce."
+    }
+  ]
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Primary Meta Tags -->
+    <title>{{ site.title }}</title>
+    <meta name="title" content="{{ site.metaTitle }}">
+    <meta name="description" content="{{ site.metaDescription }}">
+    <meta name="keywords" content="{{ site.metaKeywords }}">
+    <meta name="author" content="Gross Hydraulic">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="language" content="Czech">
+    <meta name="geo.region" content="CZ-21">
+    <meta name="geo.placename" content="{{ site.addressCity }}">
+    <meta name="geo.position" content="{{ site.geoLat }};{{ site.geoLon }}">
+    <meta name="ICBM" content="{{ site.geoLat }}, {{ site.geoLon }}">
+    <meta name="theme-color" content="#FFD700">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="{{ site.canonicalUrl }}">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ site.canonicalUrl }}">
+    <meta property="og:title" content="Gross Hydraulic | Hydraulický servis pro nákladní vozidla 24/7">
+    <meta property="og:description" content="{{ site.metaDescription }}">
+    <meta property="og:image" content="{{ site.canonicalUrl }}images/hero.jpeg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="cs_CZ">
+    <meta property="og:site_name" content="Gross Hydraulic">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="{{ site.canonicalUrl }}">
+    <meta property="twitter:title" content="Gross Hydraulic | Hydraulický servis pro nákladní vozidla 24/7">
+    <meta property="twitter:description" content="{{ site.metaDescription }}">
+    <meta property="twitter:image" content="{{ site.canonicalUrl }}images/hero.jpeg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/images/logo.png">
+    <link rel="apple-touch-icon" href="/images/logo.png">
+
+    <!-- Fonts & Styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles.css">
+
+    <!-- Netlify Identity Widget -->
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+
+    <!-- Schema.org Structured Data: LocalBusiness -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "AutoRepair",
+        "name": "Gross Hydraulic",
+        "image": "{{ site.canonicalUrl }}images/hero.jpeg",
+        "logo": "{{ site.canonicalUrl }}images/logo.png",
+        "url": "{{ site.canonicalUrl }}",
+        "telephone": "+420722650750",
+        "email": "{{ site.email }}",
+        "priceRange": "$$",
+        "description": "Hydraulický servis pro všechny druhy vozidel. Montáž hydraulických systémů HYVA, výroba hadic na míru, mobilní servis nonstop 24/7.",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "{{ site.addressStreet }}",
+            "addressLocality": "{{ site.addressCity }}",
+            "postalCode": "{{ site.addressPostalCode }}",
+            "addressRegion": "{{ site.addressRegion }}",
+            "addressCountry": "CZ"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": {{ site.geoLat }},
+            "longitude": {{ site.geoLon }}
+        },
+        "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+                "Monday", "Tuesday", "Wednesday", "Thursday",
+                "Friday", "Saturday", "Sunday"
+            ],
+            "opens": "00:00",
+            "closes": "23:59"
+        },
+        "areaServed": [
+            {
+                "@type": "City",
+                "name": "Uhlířské Janovice"
+            },
+            {
+                "@type": "City",
+                "name": "Kutná Hora"
+            },
+            {
+                "@type": "AdministrativeArea",
+                "name": "Středočeský kraj"
+            }
+        ],
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Hydraulický servis",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Montáž hydraulických systémů HYVA"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Výroba hydraulických hadic na míru"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Mobilní lisování hadic UNIFLEX"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Servis sklápění návěsů"
+                    }
+                }
+            ]
+        },
+        "sameAs": []
+    }
+    </script>
+</head>
+<body>
+    {{ content | safe }}
+
+    <script src="/script.js"></script>
+
+    <!-- Netlify Identity redirect -->
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+    </script>
+</body>
+</html>

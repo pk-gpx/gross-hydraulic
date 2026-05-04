@@ -1,0 +1,29 @@
+{
+  "label": "O nás",
+  "heading": "Váš spolehlivý partner<br>pro <span class=\"text-yellow\">hydrauliku</span>",
+  "description": "Jsme váš spolehlivý partner pro montáž, servis a výrobu hydraulických systémů pro nákladní automobily, tahače a pracovní stroje sídlící v Uhlířských Janovicích. Působíme zejména v okrese Kutná Hora a okolí, přičemž klademe důraz na kvalitu, rychlost a spolehlivost našich služeb.",
+  "image": "/images/about.jpg",
+  "imageAlt": "Servisní dodávka Gross Hydraulic",
+  "features": [
+    {
+      "icon": "star",
+      "title": "Kvalita",
+      "description": "Používáme pouze špičkové komponenty od renomovaných výrobců."
+    },
+    {
+      "icon": "clock",
+      "title": "Rychlost",
+      "description": "Díky mobilnímu servisu a rychlé výrobě hadic minimalizujeme prostoje vašich strojů."
+    },
+    {
+      "icon": "document",
+      "title": "Zkušenosti",
+      "description": "Máme dlouholetou praxi v oboru hydraulických systémů."
+    },
+    {
+      "icon": "shield",
+      "title": "Jedinečnost",
+      "description": "Každému zákazníkovi nabízíme řešení na míru."
+    }
+  ]
+}

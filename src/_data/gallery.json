@@ -1,0 +1,15 @@
+{
+  "label": "Portfolio",
+  "heading": "Naše <span class=\"text-yellow\">práce</span>",
+  "description": "Podívejte se na ukázky naší práce a realizací.",
+  "images": [
+    { "image": "/images/work1.jpeg", "alt": "MAN tahač před dílnou" },
+    { "image": "/images/work2.jpeg", "alt": "Scania tahač" },
+    { "image": "/images/work3.jpeg", "alt": "Hydraulický systém - detail" },
+    { "image": "/images/work4.jpeg", "alt": "Tatra s hydraulikou" },
+    { "image": "/images/work5.jpeg", "alt": "Scania tahač u dílny" },
+    { "image": "/images/work6.jpeg", "alt": "Hydraulická nádrž MAN" },
+    { "image": "/images/work7.jpeg", "alt": "Mobilní lisování hadic v terénu" },
+    { "image": "/images/work8.jpeg", "alt": "Červené hydraulické nádrže - detail" }
+  ]
+}

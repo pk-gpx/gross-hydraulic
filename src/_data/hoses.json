@@ -1,0 +1,22 @@
+{
+  "label": "Výroba na míru",
+  "heading": "Výroba hydraulických<br><span class=\"text-yellow\">hadic na míru</span>",
+  "description": "Nabízíme komplexní výrobu hydraulických hadic na míru přesně podle požadavků zákazníka.",
+  "image": "/images/hoses.jpeg",
+  "imageAlt": "Hydraulické hadice a koncovky",
+  "services": [
+    {
+      "title": "Rychlá a přesná výroba:",
+      "description": "S využitím moderních technologií a kvalitních materiálů vyrábíme hadice odolné vůči vysokému tlaku a extrémním podmínkám."
+    },
+    {
+      "title": "Široký výběr koncovek:",
+      "description": "Dodáváme hadice s různými typy koncovek pro různé aplikace."
+    },
+    {
+      "title": "Lisování na místě:",
+      "description": "Díky našemu mobilnímu lisu UNIFLEX nabízíme lisování hadic přímo v terénu, čím minimalizujeme prostoje vašich strojů."
+    }
+  ],
+  "note": "Dále máme v nabídce sklápěcí ventily, hydraulické nádrže, hydraulická čerpadla, PTO pro různé typy převodovek a další volitelné vybavení."
+}
